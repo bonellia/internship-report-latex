@@ -1,0 +1,70 @@
+% This document has been created considering guidelines in METU CEng
+% "Summer Practice Rules and Template" which can be viewed at:
+% https://ceng.metu.edu.tr/system/files/studentdocs/summer-practice/metu_summer_practice_report_template-4.pdf
+
+\documentclass{scrreprt}
+\usepackage{listings}
+\usepackage{underscore}
+\usepackage{graphicx}
+\graphicspath{ {./assets/} }
+\usepackage[bookmarks=true]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\hypersetup{
+    pdftitle={Summer Practice Report},
+    pdfauthor={$<$Author$>$}, % author
+    pdfsubject={TeX and LaTeX}, % subject of the document
+    pdfkeywords={TeX, LaTeX, graphics, images, report, internship, summer practice}, % list of keywords
+    colorlinks=true, % false: boxed links; true: colored links
+    linkcolor=blue, % color of internal links
+    citecolor=black, % color of links to bibliography
+    filecolor=black, % color of file links
+    urlcolor=purple, % color of external links
+    linktoc=page % only page is linked
+}
+
+\usepackage{hyperref}
+\begin{document}
+
+\includegraphics[width=2cm]{metu.png}
+\hfill
+\includegraphics[width=2cm]{ceng.png}
+
+\begin{center}
+    {\bfseries
+        \Huge{$<$University Name$>$\\ $<$Department Name$>$}\\
+        \vspace{1.6cm}
+        Summer Practice Report\\
+        $<$Course Code$>$\\
+        \vspace{3.6cm}
+    }
+\end{center}
+
+\begin{flushleft}
+    {\bfseries
+        \large{Student Name: }\\
+        \vspace{0.25cm}
+        Organization Name: \\
+        \vspace{0.25cm}
+        Address: \\
+        \vspace{0.25cm}
+        Start Date: \\
+        \vspace{0.25cm}
+        End Date: \\
+        \vspace{0.25cm}
+        Total Working Days: \\
+        \vspace{0.25cm}
+        Video Presentation Link (optional): \\
+    }
+\end{flushleft}
+
+\tableofcontents
+
+
+\input{chapters/introduction.tex}
+\input{chapters/information.tex}
+\input{chapters/organization.tex}
+\input{chapters/conclusion.tex}
+\input{chapters/appendices.tex}
+
+\end{document}
