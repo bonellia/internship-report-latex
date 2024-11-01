@@ -10,6 +10,7 @@ On a Debian based Linux machine:
 sudo apt install texlive -y
 sudo apt install latexmk -y
 sudo apt install texlive-latex-extra -y
+sudo apt install texlive-extra-utils -y
 ```
 
 Using VSCode as the text editor, the following extensions are recommended:
